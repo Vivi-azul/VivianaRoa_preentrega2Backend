@@ -1,0 +1,46 @@
+[
+    {
+      "title": "Fideos",
+      "description": "Grado 2",
+      "price": "890",
+      "img": "-",
+      "code": "abc123",
+      "stock": "100",
+      "category": "Almacen",
+      "status": true,
+      "id": 1
+    },
+    {
+      "title": "Leche Blanca",
+      "description": "Leche de caja 1 Litro",
+      "price": "1200",
+      "img": "-",
+      "code": "abc124",
+      "stock": "80",
+      "category": "Almacen",
+      "status": true,
+      "id": 2
+    },
+    {
+      "title": "Aceite",
+      "description": "Aceite vegetal Maravilla 1 Litro",
+      "price": "1500",
+      "img": "-",
+      "code": "abc125",
+      "stock": "120",
+      "category": "Almacen",
+      "status": true,
+      "id": 3
+    },
+    {
+      "title": "Conservas",
+      "description": "Piñas en rodajas en Caja",
+      "price": "1100",
+      "img": "Sin Imagen",
+      "code": "a1",
+      "stock": "86",
+      "category": "Almacen",
+      "status": true,
+      "id": 4
+    }
+  ]
