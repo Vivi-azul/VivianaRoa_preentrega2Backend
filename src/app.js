@@ -4,6 +4,10 @@ import { Server } from "socket.io";
 import productsRouter from "./routes/products.router.js";
 import cartsRouter from "./routes/carts.router.js";
 import viewsRouter from "./routes/views.router.js";
+import ProductManager from "./controllers/product-manager.js";
+
+const productManager = new ProductManager("./src/models/products.json");
+const io = new Server(httpServer); 
 
 const app = express();
 const PUERTO = 8080;
@@ -26,11 +30,6 @@ app.use("/", viewsRouter);
 const httpServer = app.listen(PUERTO, () => {
     console.log(`Servidor escuchando en el puerto ${PUERTO}`);
 });
-
-import ProductManager from "./controllers/product-manager.js";
-const productManager = new ProductManager("./src/models/productos.json");
-
-const io = new Server(httpServer); 
 
 
 io.on("connection", async (socket) => {
